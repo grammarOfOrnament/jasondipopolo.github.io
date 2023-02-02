@@ -1,8 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    </style>
 </head>
+
 <body>
-  <h1>Hello Sworld!</h1>
+    <div class="leftHalf">
+        <h1>SELECT DESIGN MOVEMENTS</h1>
+        <h2 class="subtitle">OF THE 20<sup>th</sup> CENTURY</h2>
+        <p> The 20<sup>th</sup> century art world experienced the development of new styles and explorations such as
+            fauvism, expressionism, Dadaism, cubism, de stijl, surrealism, abstract expressionism, color field, pop art,
+            minimal art, lyrical abstraction, and conceptual art. The modern art movement revolutionized art and culture
+            and set the stage for both Modernism and its counterpart postmodern art as well as other contemporary art
+            practices. Art Nouveau began as a form of architecture and design but fell out of fashion after World War I.
+            The style was dynamic and inventive but unsuited to the depression of the Great War.</p>
+
+        <ul>
+            <button class="artPeriodListItems" onclick="getSwissPage()">International Typographic Style
+                (1955-1975)</button>
+            <button class="artPeriodListItems" onclick="getPostmodernismPage()">Postmodernism (1977-Present)</button>
+            <button class="artPeriodListItems" onclick="getMinimalismPage()">Minimalism (1984-Present)</button>
+        </ul>
+
+        <h2 id="artDesignPeriodHeader">Art Nouveau</h2>
+        <p>Read more about the art/design period directly or find random resources pertaining to it. The random resource
+            is quite the wildcard and may not always be accessible.</p>
+
+        <a class="externalLinkButtons" id="artDesignPeriodButton" href="">
+            <button class="externalLinkButtons">Dive into Art/Design Period</button>
+        </a>
+        <a id="randomResourceButton">
+            <button class="secondaryButton externalLinkButtons">Explore Random Resource</button>
+        </a>
+
+
+        <h3>Related Topics</h3>
+        <ul id="relatedTopicsList">
+        </ul>
+
+    </div>
+    <div class="rightHalf">
+        <img class="coverImage"
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/The_Grange%2C_Ramsgate_1.jpg/1920px-The_Grange%2C_Ramsgate_1.jpg"></img>
+    </div>
 </body>
+
+<script src="app.js"></script>
+
 </html>
